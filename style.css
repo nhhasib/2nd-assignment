@@ -7,6 +7,9 @@
     --------------------- */
 body{
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+
 }
 .top-part{
     background-color: rgba(255, 144, 14, 0.1);
@@ -53,7 +56,6 @@ body{
     font-size: 64px;
     color: #131313;
     margin: 0;
-
 }
 .section-description{
     font-weight: 400;
@@ -101,7 +103,6 @@ body{
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     align-items: center;
-    
 }
 .features-text h1 {
     margin-top: 24px;
@@ -138,9 +139,6 @@ body{
     gap: 54px;
     align-items: center;
     padding: 0 240px;
-}
-
-.experience-text-container {
 }
 .experience-title {
     padding-left: 21px;
@@ -263,7 +261,7 @@ position: relative;
 
 .sponsors-container{
     text-align: center;
-    padding: 0 240px;
+    padding: 20px 240px 0 240px;
 }
 .sponsors-text{
     width: 542px;
@@ -325,7 +323,7 @@ Responsive for Mobile
         margin-bottom: 0;
     }
     .banner{
-        width:100vh;
+       display: none;
     }
     .features-part-container{
         flex-direction: column-reverse;
@@ -339,13 +337,62 @@ Responsive for Mobile
         padding: 0;
         gap: 0;
         flex-direction: column;
-        width: 100%;
     }
     .experience-text-container{
-        width: 576px;
         padding: 0 20px;
     }
-    .subsection{
+    .subsection {
         width: 100%;
+        padding: 5px 10px
+    }
+    .experience-image{
+        padding: 0;
+        width: 300px;
+        height: auto;
+    }
+    .experience-button{
+        width: 200px;
+        height: auto;
+    }
+    .experience-text{
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .ten-years{
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .facts-container{
+        padding: 10px;
+        width: 350px;
+    }
+    .facts{
+        grid-template-columns: 1fr;
+    }
+    .letest-stories{
+        padding: 10px;
+    }
+    .stories{
+        flex-direction: column;
+    }
+    .story-img{
+        width: 100%;
+    }
+    .sponsors-container{
+        padding: 10px;
+        text-align: left;
+    }
+    .sponsors-icons{
+        grid-template-columns: 1fr;
+    }
+    .sponsors-icon{
+        padding-bottom: 20px;
+    }
+    .footer-section{
+        margin: 0;
+    }
+    .footer-text{
+        padding: 20px;
     }
 }
